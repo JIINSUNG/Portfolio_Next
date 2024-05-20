@@ -1,0 +1,17 @@
+/* pc 고해상도 */
+.main {
+    display: flex;
+    flex : 1;
+    flex-direction: column;
+}
+
+/* 모바일 */
+@media  (max-width: 767px) {
+
+}
+
+/* pc (일반해상도) */
+@media (min-width: 768px) and (max-width: 1600px) {
+
+}
+
