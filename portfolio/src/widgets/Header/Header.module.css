@@ -1,8 +1,8 @@
 .header {
-    display: flex;
-    height : 80px;
+  display: flex;
+  height: 80px;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
-
 }
