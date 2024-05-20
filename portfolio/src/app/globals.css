@@ -86,10 +86,16 @@ body {
 
 body {
   display: flex;
-  flex : 1;
+  flex: 1;
   flex-direction: column;
-  min-height : 100dvh;
+  min-height: 100dvh;
   max-width: 100dvw;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 a {
