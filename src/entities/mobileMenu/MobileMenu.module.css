@@ -44,15 +44,21 @@
 }
 
 .link {
-  padding: 1rem;
-  font-size: 2.5rem;
+  padding: 10px;
+  font-size: 2rem;
   color: white;
 }
 
-.link:hover {
-  color: green;
-  border-radius: 10px;
-  background: linear-gradient(to bottom, green, blue, green);
+.link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px white;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
 }
 
 @media (min-width: 768px) {

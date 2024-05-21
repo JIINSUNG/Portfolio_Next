@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | 인성",
-    default: "인성",
+    template: "%s | insung",
+    default: "insung",
   },
   description: "지인성의 포트폴리오 (with Next.js)",
 };
