@@ -1,0 +1,25 @@
+.mobileBtn {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  fill: blue;
+}
+
+.closeBtn {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+}
+
+@media (max-width: 767px) {
+  .mobileBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .closeBtn {
+    display: block;
+    cursor: pointer;
+  }
+}

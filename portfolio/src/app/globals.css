@@ -90,6 +90,7 @@ body {
   flex-direction: column;
   min-height: 100dvh;
   max-width: 100dvw;
+  min-width: 360px;
 }
 
 main {
@@ -103,8 +104,18 @@ a {
   text-decoration: none;
 }
 
+.mobile {
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
   }
 }
