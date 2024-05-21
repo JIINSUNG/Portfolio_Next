@@ -1,0 +1,62 @@
+@keyframes appear {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes disappear {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}
+
+.menu {
+  position: absolute;
+  background: linear-gradient(to bottom, blue, #4b89dc, blue);
+  min-width: 360px;
+  width: 100%;
+  height: 100%;
+  animation: appear 0.3s ease-out;
+}
+
+.disappear {
+  display: none;
+  /* position: absolute;
+  background: #4b89dc;
+  width: 100%;
+  height: 100%;
+  animation: disappear 0.5s ease-out forwards; */
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 100px 20px;
+}
+
+.link {
+  padding: 1rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.link:hover {
+  color: green;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, green, blue, green);
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}

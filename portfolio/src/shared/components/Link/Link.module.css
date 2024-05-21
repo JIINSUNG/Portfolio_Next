@@ -1,0 +1,25 @@
+.active {
+  color: black;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.link {
+  display: inline-block; /* Add this to apply transform correctly */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.link:hover {
+  color: green;
+  animation: floating 1s ease-in-out infinite;
+}
