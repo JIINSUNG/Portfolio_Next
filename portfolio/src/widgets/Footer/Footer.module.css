@@ -1,15 +1,8 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 30px 100px;
-  background: linear-gradient(
-    to right,
-    black,
-    darkslategray,
-    black,
-    darkslategray,
-    black
-  );
+  padding: 20px 100px;
+  background: linear-gradient(to right, black, darkslategray 75%, black);
   gap: 10px;
   border-radius: 5px;
 }
