@@ -3,6 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LaptopIcon from "@mui/icons-material/Laptop";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
@@ -16,9 +17,11 @@ export default function Footer() {
         <li className={styles.menu}>
           <AccountCircleIcon className={styles.item} />
         </li>
-        <li className={styles.menu}>
-          <EmailIcon className={styles.item} />
-        </li>
+        <Link href={"/contact"}>
+          <li className={styles.menu}>
+            <EmailIcon className={styles.item} />
+          </li>
+        </Link>
       </ul>
       <section className={styles.copyright}>
         <p className={styles.paragraph}>Copyright&copy; 2024 지인성.</p>

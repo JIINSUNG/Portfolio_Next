@@ -25,7 +25,7 @@ export default function Header() {
           <LinkButton href="/stack" title="Stack" />
         </li>
         <li>
-          <LinkButton href="/inquiry" title="Inquiry" />
+          <LinkButton href="/contact" title="Contact" />
         </li>
       </ul>
       <HamburgerMenu />
