@@ -25,8 +25,8 @@ const MobileMenu = () => {
         <Link href="/stack" className={styles.link}>
           Stack
         </Link>
-        <Link href="/inquiry" className={styles.link}>
-          Inquiry
+        <Link href="/contact" className={styles.link}>
+          Contact
         </Link>
       </nav>
     </div>

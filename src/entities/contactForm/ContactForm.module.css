@@ -1,0 +1,52 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup {
+    display : flex;
+    flex-direction : row;
+    align-items: flex-start;
+    margin : 20px 0;
+}
+
+
+.formGroup label {
+    color : darkslategray;
+    width : 75px;
+}
+
+.formGroup input {
+    border-width : 1px;
+    border-color : #00cfbd;
+    display: flex;
+    height : 40px;
+    flex-direction: row;
+    flex : 1;
+}
+
+.formGroup textarea {
+    border-width : 1px;
+    border-color : #00cfbd;
+    display: flex;
+    height : 200px;
+    flex-direction: row;
+    flex : 1;
+    padding : 4px;
+}
+
+.submitBtn {
+    align-self : center;
+    width : 100%;
+    max-width: 400px;
+    height : 60px;
+    background-color: #00b3f0;
+    color : white;
+    font-size : 1.5rem;
+    border-radius : 10px;
+    border-style: none;
+}
+
+
+
+
