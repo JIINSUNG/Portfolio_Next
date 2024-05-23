@@ -1,81 +1,76 @@
 @keyframes float {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-100px) rotate(15deg);
-
-    }
-    100% {
-        transform: translateY(0) rotate(0deg);
-    }
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-100px) rotate(15deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    flex : 1;
-    justify-content : center;
-    align-items : center;
-    padding : 5% 5%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5%;
 }
 
 .header {
-    display : flex;
-    flex-direction: column;
-    text-align : center;
-    margin-bottom : 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
 }
 
 .header h1 {
-    font-size : 3rem;
-    margin : 2rem 0;
+  font-size: 3rem;
+  margin: 1rem 0;
 }
 
 .header p {
-    font-size: 1.5rem;
-    color : grey;
+  font-size: 1.5rem;
+  color: grey;
 }
 
 .content {
-    display: flex;
-    width : 100%;
-    justify-content : center;
-    flex-direction: row;
-    gap : 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .imageSection {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-    aspect-ratio: 1;
-    flex : 1;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  aspect-ratio: 1;
+  flex: 1;
 }
 
 .imageSection img {
-    max-width: 100%;
-    animation: float 2s ease-in-out infinite;
+  max-width: 100%;
+  animation: float 2s ease-in-out infinite;
 }
 
 .formSection {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
 }
 
-
-
-@media (max-width : 767px)
-{
-    .imageSection {
-        display: none;
-    }
-    .header p {
-        font-size: 1rem;
-        color : grey;
-    }
-
+@media (max-width: 767px) {
+  .imageSection {
+    display: none;
+  }
+  .header p {
+    font-size: 1rem;
+    color: grey;
+  }
 }

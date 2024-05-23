@@ -13,7 +13,6 @@ const MobileMenu = () => {
     <div
       ref={menuRef}
       className={context.menuOpen ? styles.menu : styles.disappear}
-      onClick={() => context.setMenuOpen((prev: boolean) => !prev)}
     >
       <nav className={styles.nav}>
         <Link href="/about" className={styles.link}>

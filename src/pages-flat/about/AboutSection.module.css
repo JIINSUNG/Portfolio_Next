@@ -1,0 +1,166 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes mobileappear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearright {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 1000px;
+  padding: 5% 5%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.about {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: appearleft 1.5s ease-in-out;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 20px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.content p {
+  font-size: 1.5rem;
+}
+
+.profile {
+  display: flex;
+  flex: 1;
+  position: relative;
+  animation: appearright 1.5s ease-in-out;
+}
+
+.imageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.imageSection img {
+  width: 500px;
+  height: 500px;
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+  .section {
+    padding: 0;
+    min-height: 800px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .imageSection img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section {
+    padding: 0;
+    min-height: 800px;
+  }
+
+  .about {
+    position: relative;
+    justify-content: flex-start;
+    max-height: 450px;
+    animation: mobileappear 1.5s ease-in-out;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    margin-top: 10%;
+    position: absolute;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile {
+    display: flex;
+    animation: mobileappear 1.5s ease-in-out;
+  }
+
+  .imageSection {
+    position: absolute;
+    object-fit: fill;
+    padding: 10%;
+  }
+
+  .imageSection img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+  }
+}

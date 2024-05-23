@@ -1,5 +1,7 @@
+import { AboutSection } from "@/pages-flat/about";
+
 const Page = () => {
-  return <>This is About Page</>;
+  return <AboutSection />;
 };
 
 export default Page;
