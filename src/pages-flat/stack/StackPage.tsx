@@ -10,110 +10,152 @@ export default function StackPage() {
       <main className={styles.content}>
         {/* frontend */}
         <ul className={styles.listContainer}>
-          <label className={styles.labelTitle}>Frontend</label>
+          <li className={styles.labelTitle}>Frontend</li>
           <li className={styles.listItem}>
             <label>HTML</label>
+            <div>
+              <span>70%</span>
+            </div>
+          </li>
+          <li>
+            <li className={styles.listItem}>
+              <label>CSS</label>
+              <div>
+                <span>60%</span>
+              </div>
+            </li>
+          </li>
+          <li className={styles.listItem}>
+            <label>Javascript</label>
+            <div>
+              <span>60%</span>
+            </div>
+          </li>
+          <li className={styles.listItem}>
+            <label>Typescript</label>
             <div>
               <span>60%</span>
             </div>
           </li>
           <li>
             <li className={styles.listItem}>
-              <label>CSS</label>
-              <div></div>
-            </li>
-          </li>
-          <li className={styles.listItem}>
-            <label>Javascript</label>
-            <div></div>
-          </li>
-          <li className={styles.listItem}>
-            <label>Typescript</label>
-            <div></div>
-          </li>
-          <li>
-            <li className={styles.listItem}>
               <label>Vue.js</label>
-              <div></div>
+              <div>
+                <span>60%</span>
+              </div>
             </li>
           </li>
           <li className={styles.listItem}>
             <label>React.js</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>Next.js</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>Tailwind</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>StyledComponent</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>Zustand</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>Redux Toolkit</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>Pinia</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>React Query</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
         </ul>
 
         {/* backend */}
         <ul className={styles.listContainer}>
-          <label className={styles.labelTitle}>Backend</label>
+          <li className={styles.labelTitle}>Backend</li>
           <li className={styles.listItem}>
             <label>Spring</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>Spring Boot</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>PHP</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
         </ul>
 
         {/* 형상관리 등 */}
         <ul className={styles.listContainer}>
-          <label className={styles.labelTitle}>ETC</label>
+          <li className={styles.labelTitle}>ETC</li>
           <li className={styles.listItem}>
             <label>JIRA</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>MatterMost</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>GITHUB</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>GITLAB</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>VisualStudioCode</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
           <li className={styles.listItem}>
             <label>WebStorm</label>
-            <div></div>
+            <div>
+              <span>60%</span>
+            </div>
           </li>
         </ul>
       </main>

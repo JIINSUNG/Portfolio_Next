@@ -19,8 +19,7 @@
 }
 
 .menu {
-  position: fixed;
-  z-index: 1;
+  position: absolute;
   background: linear-gradient(to bottom, blue, #4b89dc, blue);
   min-width: 360px;
   width: 100%;
