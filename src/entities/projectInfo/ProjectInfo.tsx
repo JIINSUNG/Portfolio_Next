@@ -7,7 +7,7 @@ interface ProjectInfo {
 }
 
 const ProjectInfo = ({ projectId, projectInfo }: ProjectInfo) => {
-  return <div className={styles.info}></div>;
+  return <section className={styles.section}></section>;
 };
 
 export default ProjectInfo;
