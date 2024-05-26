@@ -2,8 +2,6 @@ import { 단짠단짠, 시크리또 } from "@/shared/assets";
 import styles from "./ProjectInfoSection.module.css";
 import Image from "next/image";
 import { projectDetailDataType } from "@/shared/assets/projectDetail";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { ImageCarousel } from "@/entities/imageCarousel";
 
 type projectInfoProps = {
