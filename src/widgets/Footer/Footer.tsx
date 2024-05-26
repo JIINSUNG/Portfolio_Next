@@ -11,12 +11,16 @@ export default function Footer() {
         <li className={styles.menu}>
           <GitHubIcon className={styles.item} />
         </li>
-        <li className={styles.menu}>
-          <LaptopIcon className={styles.item} />
-        </li>
-        <li className={styles.menu}>
-          <AccountCircleIcon className={styles.item} />
-        </li>
+        <Link href="/project">
+          <li className={styles.menu}>
+            <LaptopIcon className={styles.item} />
+          </li>
+        </Link>
+        <Link href="about">
+          <li className={styles.menu}>
+            <AccountCircleIcon className={styles.item} />
+          </li>
+        </Link>
         <Link href={"/contact"}>
           <li className={styles.menu}>
             <EmailIcon className={styles.item} />
@@ -27,7 +31,6 @@ export default function Footer() {
         <p className={styles.paragraph}>Copyright&copy; 2024 지인성.</p>
         <p className={styles.paragraph}>All Rights Reserved.</p>
       </section>
-      <p className={styles.paragraph}>문의 : crm03008@gmail.com</p>
       <h1 className={styles.author}>JIINSUNG</h1>
     </footer>
   );

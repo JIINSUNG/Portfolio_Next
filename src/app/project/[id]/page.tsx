@@ -13,7 +13,6 @@ const Page = async ({ params }: IProject) => {
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/project/${params.id}`,
     { cache: "no-store" }
   ).then((res) => res.json());
-  console.log(projectInfo);
   return <ProjectInfoSection projectInfo={projectInfo} />;
 };
 

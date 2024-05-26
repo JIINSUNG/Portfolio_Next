@@ -47,7 +47,10 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0 5%;
+  min-height: 1000px;
+  padding: 5% 10%;
+  background: #89daff;
+  color: white;
 }
 
 .hero {
@@ -64,7 +67,6 @@
 
 .header h1 {
   font-size: 3rem;
-  margin: 1rem 0;
 }
 
 .about {
@@ -80,7 +82,8 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 0 20px;
+  padding: 0% 10%;
+  color: black;
 }
 
 .content h1 {
@@ -89,7 +92,8 @@
 }
 
 .content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .profile {
@@ -114,7 +118,7 @@
 
 @media (min-width: 1000px) and (max-width: 1600px) {
   .section {
-    padding: 0;
+    padding: 5% 5%;
     min-height: 800px;
   }
 
@@ -130,14 +134,13 @@
 
 @media (max-width: 1000px) {
   .section {
-    padding: 0;
+    padding: 5% 5%;
     min-height: 800px;
   }
 
   .about {
     position: relative;
     justify-content: flex-start;
-    max-height: 450px;
     animation: mobileappear 1.5s ease-in-out;
   }
 
@@ -146,12 +149,12 @@
   }
 
   .content {
-    margin-top: 10%;
-    position: absolute;
+    padding: 5% 5%;
   }
 
   .content h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .profile {
@@ -160,9 +163,8 @@
   }
 
   .imageSection {
-    position: absolute;
-    object-fit: fill;
-    padding: 10%;
+    position: relative;
+    object-fit: contain;
   }
 
   .imageSection img {
@@ -172,5 +174,6 @@
 
   .content p {
     font-size: 1.2rem;
+    text-align: center;
   }
 }

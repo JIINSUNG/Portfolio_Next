@@ -1,3 +1,3 @@
-const stack = {};
+const stack = [{}];
 
 export default stack;

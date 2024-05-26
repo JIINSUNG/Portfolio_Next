@@ -20,7 +20,7 @@ export default function BentoCard({
   return (
     <Link href={`/project/${id}`}>
       <div className={styles.bento}>
-        <Image src={src} alt="bacgkround" />
+        <Image src={src} alt="background" />
         <main className={styles.main}>
           <h1>{title}</h1>
           <h2>{stack}</h2>

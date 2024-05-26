@@ -4,7 +4,7 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  padding: 0 5%;
+  padding: 5% 10%;
 }
 
 .header {
@@ -50,11 +50,13 @@
 .description {
   font-size: 1.5rem;
   align-self: center;
+  padding: 0% 5%;
 }
 
 .logo {
   display: flex;
   position: relative;
+  justify-content: center;
 }
 
 .logo img {
@@ -71,29 +73,25 @@
 .infoItem p {
   font-weight: bold;
   font-size: 1.5rem;
+  white-space: pre-wrap;
+  gap: 10px;
+}
+
+.infoItem a {
+  color: blue;
 }
 
 .infoItem h1 {
-  width: 200px;
+  min-width: 250px;
   font-size: 1.5rem;
   color: slategray;
+  gap: 10px;
 }
 
 .infoDetail {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.imageContainer {
-  display: flex;
-  gap: 15px;
-}
-
-.imageCard {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  border-radius: 12px;
 }
 
 .videoContainer {
@@ -106,6 +104,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 1600px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 5% 5%;
+  }
+
   .wrapper {
     flex-direction: column;
     gap: 50px;
@@ -114,18 +120,26 @@
   .description {
     text-align: center;
   }
+
+  .infoItem p {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 767px) {
-  .infoItem h1 {
-    width: 160px;
+  .header h1 {
     font-size: 1.2rem;
+  }
+
+  .infoItem h1 {
+    min-width: 100px;
+    font-size: 1rem;
     color: slategray;
   }
 
   .infoItem p {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .main {
@@ -137,6 +151,7 @@
   }
 
   .description {
+    font-size: 1rem;
     text-align: center;
   }
 

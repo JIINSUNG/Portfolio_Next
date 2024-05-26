@@ -43,11 +43,8 @@
 
 .bento {
   position: relative;
-  width: 400px;
-  height: 400px;
-  border-width: 1px;
-  border-color: #00cfbd;
-  border-style: solid;
+  width: 300px;
+  height: 250px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
