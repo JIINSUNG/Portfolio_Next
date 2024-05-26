@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/widgets/Header";
 import { Footer } from "@/widgets/Footer";
 import { MenuProvider } from "@/shared/context";
 import { MobileMenu } from "@/entities/mobileMenu";
 
-const inter = Inter({ subsets: ["latin"] });
+const pretendard = localFont({
+  src: "./PretendardVariable.woff2",
+  display: "swap",
+  weight: "45 920",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -23,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={inter.className}>
+      <body className={pretendard.className}>
         <MenuProvider>
           <MobileMenu />
           <Header />
