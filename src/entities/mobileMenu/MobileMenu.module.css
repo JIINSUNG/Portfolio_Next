@@ -20,6 +20,8 @@
 
 .menu {
   position: absolute;
+  z-index: 1;
+  flex: 1;
   background: linear-gradient(to bottom, blue, #4b89dc, blue);
   min-width: 360px;
   width: 100%;

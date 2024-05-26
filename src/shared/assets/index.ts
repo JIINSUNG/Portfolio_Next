@@ -7,3 +7,6 @@ export { default as 시크리또 } from "./시크리또.png";
 export { default as 큐잉 } from "./큐잉.png";
 export { default as 파인디어 } from "./파인디어.png";
 export { default as 트리폴린 } from "./EnjoyTrip.png";
+export { default as projects } from "./project";
+export { default as stacks } from "./stack";
+export { default as profile } from "./profile.png";
