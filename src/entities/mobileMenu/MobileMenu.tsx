@@ -15,16 +15,40 @@ const MobileMenu = () => {
       className={context.menuOpen ? styles.menu : styles.disappear}
     >
       <nav className={styles.nav}>
-        <Link href="/about" className={styles.link}>
+        <Link
+          href="/about"
+          onClick={() => {
+            context.setMenuOpen(false);
+          }}
+          className={styles.link}
+        >
           About Me
         </Link>
-        <Link href="/project" className={styles.link}>
+        <Link
+          onClick={() => {
+            context.setMenuOpen(false);
+          }}
+          href="/project"
+          className={styles.link}
+        >
           Project
         </Link>
-        <Link href="/stack" className={styles.link}>
+        <Link
+          onClick={() => {
+            context.setMenuOpen(false);
+          }}
+          href="/stack"
+          className={styles.link}
+        >
           Stack
         </Link>
-        <Link href="/contact" className={styles.link}>
+        <Link
+          onClick={() => {
+            context.setMenuOpen(false);
+          }}
+          href="/contact"
+          className={styles.link}
+        >
           Contact
         </Link>
       </nav>

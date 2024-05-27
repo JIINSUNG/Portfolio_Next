@@ -23,24 +23,14 @@ export default function HeroSection() {
             transform: `translateX(${-position}px)`,
           }}
         >
-          Hello,
-        </h1>
-      </main>
-      <main className={styles.line}>
-        <h1
-          className={styles.leftHeader}
-          style={{
-            transform: `translateX(${position}px)`,
-          }}
-        >
-          I&apos;m
+          Hello, I&apos;m
         </h1>
       </main>
       <main className={styles.line}>
         <h1
           className={styles.rightHeader}
           style={{
-            transform: `translateX(${-position}px)`,
+            transform: `translateX(${position}px)`,
           }}
         >
           Insung
@@ -50,7 +40,7 @@ export default function HeroSection() {
         <p
           className={styles.leftParagraph}
           style={{
-            transform: `translateX(${position}px)`,
+            transform: `translateX(${-position}px)`,
           }}
         >
           Frontend
@@ -60,7 +50,7 @@ export default function HeroSection() {
         <p
           className={styles.rightParagraph}
           style={{
-            transform: `translateX(${-position}px)`,
+            transform: `translateX(${position}px)`,
           }}
         >
           Developer

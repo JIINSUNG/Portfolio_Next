@@ -27,45 +27,47 @@
   flex-direction: column;
   padding: 5% 0;
   gap: 5%;
+  font-family: "ApercuPro";
 }
 
 .line {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .leftHeader {
+  text-align: center;
   font-size: 20rem;
   font-weight: bold;
   animation: appearleft 1.5s ease-in-out;
 }
 
 .rightHeader {
-  text-align: end;
+  text-align: center;
   font-size: 20rem;
   font-weight: bold;
   animation: appearright 1.5s ease-in-out;
 }
 
 .leftParagraph {
-  text-align: left;
+  text-align: center;
   font-size: 15rem;
   animation: appearleft 1.5s ease-in-out;
 }
 
 .rightParagraph {
-  text-align: right;
+  text-align: center;
   font-size: 15rem;
   animation: appearleft 1.5s ease-in-out;
 }
 
 @media (max-width: 767px) {
   .leftHeader {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   .rightHeader {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   .leftParagraph {

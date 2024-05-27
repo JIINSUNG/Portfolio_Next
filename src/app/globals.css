@@ -84,11 +84,47 @@
   /*}*/
 }
 
+@font-face {
+  font-family: "ApercuPro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/ApercuPro-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "ApercuPro";
+  font-weight: 400;
+  font-style: italic;
+  src: url("/fonts/ApercuPro-MediumItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "ApercuPro";
+  font-weight: bold;
+  font-style: normal;
+  src: url("/fonts/ApercuPro-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "ApercuPro";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/ApercuPro.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "ApercuPro";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/fonts/ApercuPro-Mono.ttf") format("ttf");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   animation: appear 0.5s ease-in-out;
+  font-family: "ApercuPro", sans-serif;
 }
 
 html,
@@ -104,6 +140,7 @@ body {
   min-height: 100dvh;
   max-width: 100dvw;
   min-width: 360px;
+  background: #f1efed;
 }
 
 main {
