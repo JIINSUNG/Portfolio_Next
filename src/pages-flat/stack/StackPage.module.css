@@ -17,7 +17,7 @@
   align-items: center;
   min-height: 1000px;
   padding: 5% 10%;
-  background: #dbb1bc;
+  background: #f1efed;
 }
 
 .header {
@@ -25,7 +25,7 @@
   flex-direction: column;
   text-align: center;
   margin-bottom: 2rem;
-  color: white;
+  color: black;
 }
 
 .header h1 {
@@ -67,7 +67,6 @@
 
 .listItem label {
   width: 300px;
-  color: white;
 }
 
 .listItem span {
@@ -85,7 +84,7 @@
 
 .gauge10 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   width: 10%;
   height: 100%;
@@ -99,7 +98,7 @@
 
 .gauge20 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   width: 20%;
   height: 100%;
@@ -108,7 +107,7 @@
 
 .gauge30 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   width: 30%;
   height: 100%;
@@ -121,7 +120,7 @@
 
 .gauge40 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   width: 40%;
   height: 100%;
@@ -134,7 +133,7 @@
 
 .gauge50 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   width: 50%;
   height: 100%;
@@ -143,7 +142,7 @@
 
 .gauge60 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   width: 60%;
   height: 100%;
@@ -152,7 +151,7 @@
 
 .gauge70 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   width: 70%;
   height: 100%;
@@ -161,7 +160,7 @@
 
 .gauge80 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   width: 80%;
   height: 100%;
@@ -174,7 +173,7 @@
 
 .gauge90 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   width: 90%;
   height: 100%;

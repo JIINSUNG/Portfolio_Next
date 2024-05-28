@@ -19,7 +19,6 @@ export default function ProjectInfoSection({ projectInfo }: projectInfoProps) {
         <article className={styles.content}>
           <div className={styles.wrapper}>
             <div className={styles.titleSection}>
-              <div className={styles.title}>Introduce</div>
               <div className={styles.logo}>
                 <Image src={projectInfo.src} alt="로고" />
               </div>
@@ -30,7 +29,6 @@ export default function ProjectInfoSection({ projectInfo }: projectInfoProps) {
         <article className={styles.content}>
           <div className={styles.wrapper}>
             <div className={styles.titleSection}>
-              <div className={styles.title}>Info</div>
               <div className={styles.infoDetail}>
                 <div className={styles.infoItem}>
                   <h1>개발 기간</h1>
@@ -63,11 +61,28 @@ export default function ProjectInfoSection({ projectInfo }: projectInfoProps) {
                 </div>
                 <div className={styles.infoItem}>
                   <h1>주요 기능</h1>
-                  <p>{projectInfo.feature}</p>
+                  <section className={styles.featureSection}>
+                    {projectInfo.feature.map((feature, idx) => (
+                      <p key={idx}>{feature}</p>
+                    ))}
+                  </section>
+                </div>
+                <div className={styles.infoItem}>
+                  <h1>담당 기능</h1>
+                  <section className={styles.myFeatureSection}>
+                    {projectInfo.myfeature.map((feature, idx) => (
+                      <p key={idx}>{feature}</p>
+                    ))}
+                  </section>
                 </div>
                 <div className={styles.infoItem}>
                   <h1>성과</h1>
-                  <p>{projectInfo.achievement}</p>
+                  <section className={styles.achievementSection}>
+                    {projectInfo.achievement.map((achievement, idx) => (
+                      <p key={idx}>{achievement}</p>
+                    ))}
+                  </section>
+                  {/* <p>{projectInfo.achievement}</p> */}
                 </div>
                 {projectInfo.demo && (
                   <div className={styles.infoItem}>
@@ -83,13 +98,11 @@ export default function ProjectInfoSection({ projectInfo }: projectInfoProps) {
         <article className={styles.content}>
           <div className={styles.wrapper}>
             <div className={styles.titleSection}>
-              <div className={styles.title}>Gallery</div>
               <ImageCarousel images={projectInfo.images} />
             </div>
           </div>
         </article>
         {/* ETC */}
-        {/* <aside className={styles.aside}></aside> */}
       </main>
     </section>
   );
