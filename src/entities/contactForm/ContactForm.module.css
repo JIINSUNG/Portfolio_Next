@@ -6,7 +6,7 @@
 .formGroup {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   margin: 20px 0;
 }
 

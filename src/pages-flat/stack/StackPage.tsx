@@ -47,42 +47,6 @@ export default function StackPage() {
               <span className={styles.gauge60}>60%</span>
             </div>
           </li>
-          <li className={styles.listItem}>
-            <label>Tailwind</label>
-            <div>
-              <span className={styles.gauge70}>70%</span>
-            </div>
-          </li>
-          <li className={styles.listItem}>
-            <label>StyledComponent</label>
-            <div>
-              <span className={styles.gauge60}>60%</span>
-            </div>
-          </li>
-          <li className={styles.listItem}>
-            <label>Axios</label>
-            <div>
-              <span className={styles.gauge70}>70%</span>
-            </div>
-          </li>
-          <li className={styles.listItem}>
-            <label>Tanstack Query</label>
-            <div>
-              <span className={styles.gauge60}>60%</span>
-            </div>
-          </li>
-          <li className={styles.listItem}>
-            <label>Zustand</label>
-            <div>
-              <span className={styles.gauge60}>60%</span>
-            </div>
-          </li>
-          <li className={styles.listItem}>
-            <label>Redux Toolkit</label>
-            <div>
-              <span className={styles.gauge60}>60%</span>
-            </div>
-          </li>
         </ul>
 
         {/* backend */}

@@ -26,6 +26,8 @@ export default function ProjectSection({ preview }: ProjectSectionProps) {
                   title={project.title}
                   stack={project.stack}
                   duration={project.duration}
+                  myStack={project.myStack}
+                  team={project.team}
                 />
               ))
           : projects.map((project) => (
@@ -36,6 +38,8 @@ export default function ProjectSection({ preview }: ProjectSectionProps) {
                 title={project.title}
                 stack={project.stack}
                 duration={project.duration}
+                myStack={project.myStack}
+                team={project.team}
               />
             ))}
       </main>
