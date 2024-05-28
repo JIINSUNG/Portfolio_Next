@@ -65,6 +65,7 @@
 
 .header {
   display: flex;
+  padding: 5% 0;
   flex-direction: column;
   text-align: center;
 }
@@ -120,14 +121,56 @@
   height: 500px;
 }
 
-@media (min-width: 1000px) and (max-width: 1600px) {
+.eachSection {
+  padding-top: 5%;
+}
+
+.certificate {
+  padding: 5% 5%;
+}
+
+.certificate ul {
+  list-style: none;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.education {
+  padding: 5% 5%;
+}
+
+.education ul {
+  list-style: none;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1600px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .education ul {
+    align-self: start;
+  }
+
+  .certificate ul {
+    align-self: start;
+  }
+
   .section {
     padding: 5% 5%;
     min-height: 800px;
   }
 
   .content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .imageSection img {
@@ -136,7 +179,21 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .education ul {
+    font-size: 1rem;
+    align-self: start;
+  }
+
+  .certificate ul {
+    font-size: 1rem;
+    align-self: start;
+  }
+
   .section {
     padding: 5% 5%;
     min-height: 800px;
@@ -177,7 +234,7 @@
   }
 
   .content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: start;
   }
 }
