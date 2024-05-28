@@ -22,7 +22,7 @@
   position: absolute;
   z-index: 1;
   flex: 1;
-  background: linear-gradient(to bottom, blue, #4b89dc, blue);
+  background: #0d6efd;
   min-width: 360px;
   width: 100%;
   height: 100%;

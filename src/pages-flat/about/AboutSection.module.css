@@ -49,8 +49,12 @@
   flex: 1;
   min-height: 1000px;
   padding: 5% 10%;
-  background: #89daff;
-  color: white;
+  background: #f1efed;
+}
+
+.middleTitle {
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .hero {
@@ -174,6 +178,6 @@
 
   .content p {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: start;
   }
 }

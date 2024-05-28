@@ -14,8 +14,8 @@ const pretendard = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | insung",
-    default: "insung",
+    template: "%s | 포트폴리오",
+    default: "지인성 | 포트폴리오",
   },
   description: "지인성의 포트폴리오 (with Next.js)",
 };
