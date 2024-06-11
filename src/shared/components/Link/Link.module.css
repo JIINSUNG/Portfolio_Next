@@ -17,6 +17,7 @@
 .link {
   display: inline-block; /* Add this to apply transform correctly */
   transition: color 0.3s ease; /* Smooth color transition */
+  color: grey;
 }
 
 .link:hover {
