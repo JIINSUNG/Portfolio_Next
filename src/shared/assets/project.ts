@@ -59,7 +59,7 @@ const projectData: projectDataType[] = [
     title: "심플한 URL 단축기, 쇼트닝",
     stack: "Next14, Typescript, module css",
     duration: "2024.04.~2024.04. (3일간)",
-    myStack: "풀스택",
+    myStack: "프론트, 백엔드",
     team: "단독 개발",
   },
   {
@@ -68,7 +68,7 @@ const projectData: projectDataType[] = [
     title: "여행정보 제공 서비스, Tripoline",
     stack: "Vue3, Tailwind, Pinia, Axios, Spring boot",
     duration: "2023.11.~2023.11. (2주간)",
-    myStack: "팀장, 풀스택",
+    myStack: "팀장, 프론트, 백엔드",
     team: "2명",
   },
 ];

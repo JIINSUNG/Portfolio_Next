@@ -22,7 +22,7 @@ export default function Header() {
           <LinkButton href="/project" title="Project" />
         </li>
         <li>
-          <LinkButton href="/stack" title="Stack" />
+          <LinkButton href="/stack" title="Skills" />
         </li>
         <li>
           <LinkButton href="/contact" title="Contact" />
