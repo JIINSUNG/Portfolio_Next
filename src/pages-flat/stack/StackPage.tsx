@@ -141,7 +141,8 @@ export default function StackPage() {
               React Query를 활용한 서버 데이터 상태관리, 관련훅 작성 가능
               <br />
               <br />
-              '큐잉' 프로젝트에서 모니터링 및 서버 데이터를 관리하는데 사용
+              &apos;큐잉&apos; 프로젝트에서 모니터링 및 서버 데이터를 관리하는데
+              사용
               <br />
               <br />
               <Link href="/project/1">큐잉 바로가기</Link>
@@ -175,7 +176,7 @@ export default function StackPage() {
               경험
               <br />
               <br />
-              '파인디어' 프로젝트에서 사용자 데이터를 관리하는데 사용
+              &apos;파인디어&apos; 프로젝트에서 사용자 데이터를 관리하는데 사용
               <br />
               <br />
               <Link href="/project/2">파인디어 바로가기</Link>
