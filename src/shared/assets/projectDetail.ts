@@ -101,7 +101,7 @@ const projectDetailData: projectDetailDataType[] = [
     src: 파인디어,
     title: "통합 분실물 추천 플랫폼, 파인디어",
     stack: "React18, Typescript, Tailwind, PWA, Zustand",
-    duration: "2024.04.~2024.05. (6주간)",
+    duration: "2024.02.~2024.04. (7주간)",
     mystack: "팀장, 프론트엔드 ",
     introduce: `많은 사람들이 물건을 잃어버리지만 찾거나 찾아주는 일은 쉬운 일이 아닙니다.
     파인디어 서비스는 분실물을 좀 더 안전하고, 편리하고, 빠르게 찾아 주기 위하여 탄생하였습니다. 
@@ -155,7 +155,7 @@ const projectDetailData: projectDetailDataType[] = [
     src: 시크리또,
     title: "온라인 마니또 서비스, 시크리또",
     stack: "Vue3, Typescript, Pinia, Tailwind",
-    duration: "2024.02.~2024.04. (6주간)",
+    duration: "2024.01.~2024.02. (7주간)",
     introduce: `시크리또는 오프라인에서만 즐기던 마니또 활동을 온라인으로 옮긴 서비스입니다. 시크리또는 마니또와의 익명 채팅, 다양한 미션, 활동 히스토리 등 여러 기능을 제공하여 마니또 게임을 더욱 쉽고 재미있게 즐길 수 있도록 합니다. 반응형 웹 디자인을 채택하여 모바일, 태블릿, PC 등 모든 기기에서 원활히 이용할 수 있으며, 다양한 이벤트(미션, 공지 등)에 대한 실시간 알림도 지원합니다. 언제 어디서나 마니또 활동을 즐기며 친구나 동료들과의 관계를 더욱 돈독하게 만들 수 있도록 지원합니다.`,
     mystack: "프론트엔드",
     images: [secreto_1, secreto_2],
@@ -200,7 +200,7 @@ const projectDetailData: projectDetailDataType[] = [
     title: "대학생들 만의 안전 매칭 서비스, 단짠단짠",
     stack: "React18, Javascript, Redux",
     mystack: "프론트엔드",
-    duration: "2024.04.~2024.05. (6주간)",
+    duration: "2023.01.~2023.09.",
     introduce: `
     단짠단짠은 좀 더 안전하고 검증된 대학생 만을 위한 매칭, 커뮤니티 서비스를 위해 탄생했습니다.
     웹메일 기반의 캠퍼스 인증, PASS 기반의 본인인증을 거치기 때문에 오직 캠퍼스와 신원이 검증된  인원만 사용 가능하기 때문에 타 서비스 대비 상대방에 대한 높은 신뢰도와 안전성을 제공하는 것이 특징 입니다.  
@@ -269,7 +269,7 @@ const projectDetailData: projectDetailDataType[] = [
     title: "여행 추천 서비스, Tripoline",
     stack: "Vue3, Tailwind, Pinia, Axios, Spring boot",
     mystack: "풀스택",
-    duration: "2024.04.~2024.05. (6주간)",
+    duration: "2023.11.~2023.11. (2주간)",
     introduce: `트리폴린은 어렸을 적 재미나게 뛰어놀았던 트램펄린과 여행의 즐거움을 합쳐 태어난 서비스입니다. 공공 데이터와 카카오 지도 API를 활용하여 재미있는 여행 정보를 제공하는 것을 목표로 합니다. 관광지 검색, 여행 계획 관리, 날씨, 갤러리 등 다양한 기능을 제공하여 사용자들에게 더욱 즐거운 경험을 선사합니다.`,
     members: 6,
     images: [
