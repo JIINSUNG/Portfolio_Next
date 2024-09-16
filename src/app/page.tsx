@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
-      <ProjectSection preview={true} />
+      <ProjectSection />
       <StackPage />
     </>
   );
