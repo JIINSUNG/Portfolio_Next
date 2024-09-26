@@ -6,7 +6,6 @@ import 시크리또 from "./시크리또.png";
 import 단짠단짠 from "./단짠단짠.png";
 import 쇼트닝 from "./쇼트닝.png";
 import 트리폴린 from "./EnjoyTrip.png";
-import { ReactHTMLElement, ReactElement } from "react";
 import { image1, image2, image3, image4 } from "@/shared/assets/findear";
 import {
   qqueueing_1,
@@ -162,7 +161,8 @@ const projectDetailData: projectDetailDataType[] = [
     members: 6,
     attachment: {
       ucc: "https://www.youtube.com/watch?v=3CxjMOp94mw&ab_channel=%EA%B9%80%ED%98%84%EC%B0%BD",
-      notion: "https://github.com/4-EVERY1/QQueueing",
+      notion: "https://abalone-dresser-75e.notion.site/49f95dd95e56417dba9871520e43765a?pvs=4",
+      github: "https://github.com/yee950419/secreto"
     },
     feature: [
       "빠른 서비스 이용을 위한 소셜 로그인 지원",
