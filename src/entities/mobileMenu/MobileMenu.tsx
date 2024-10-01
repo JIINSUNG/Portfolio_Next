@@ -37,10 +37,10 @@ const MobileMenu = () => {
           onClick={() => {
             context.setMenuOpen(false);
           }}
-          href="/stack"
+          href="/skills"
           className={styles.link}
         >
-          Stack
+          Skills
         </Link>
         <Link
           onClick={() => {
