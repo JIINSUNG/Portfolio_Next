@@ -8,9 +8,11 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <ul className={styles.menubar}>
-        <li className={styles.menu}>
-          <GitHubIcon className={styles.item} />
-        </li>
+        <Link href="https://github.com/JIINSUNG" target="_blank">
+          <li className={styles.menu}>
+            <GitHubIcon className={styles.item} />
+          </li>
+        </Link>
         <Link href="/project">
           <li className={styles.menu}>
             <LaptopIcon className={styles.item} />
