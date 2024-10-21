@@ -5,6 +5,7 @@ import { Header } from "@/widgets/Header";
 import { Footer } from "@/widgets/Footer";
 import { MenuProvider } from "@/shared/context";
 import { MobileMenu } from "@/entities/mobileMenu";
+import { ChannelTalk } from "@/shared/channelTalk";
 
 const pretendard = localFont({
   src: "./PretendardVariable.woff2",
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={pretendard.className}>
+        <ChannelTalk />
         <MenuProvider>
           <MobileMenu />
           <Header />
