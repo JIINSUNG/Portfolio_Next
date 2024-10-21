@@ -4,7 +4,7 @@
     transform: translateY(20px);
   }
   to {
-    opactiy: 1;
+    opacity: 1;
     transform: translateY(0px);
   }
 }
@@ -84,11 +84,7 @@ a {
   display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+
 
 @media (max-width: 768px) {
   .mobile {
