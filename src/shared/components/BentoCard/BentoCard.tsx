@@ -25,7 +25,7 @@ export default function BentoCard({
     <Link href={`/project/${id}`}>
       <div className={styles.bento}>
         <section className={styles.imageSection}>
-          <Image src={src} alt="background" />
+          <Image src={src} alt="background" className={styles.image} />
         </section>
         <section className={styles.abstract}>
           <p className={styles.title}>{title}</p>
@@ -41,7 +41,8 @@ export default function BentoCard({
         <main className={styles.main}>
           <h1>{title}</h1>
           <h2>{stack}</h2>
-          <p>{duration}</p>
+          <span>{duration}</span>
+          <span>프로젝트 보러가기 &rarr;</span>
         </main>
       </div>
     </Link>

@@ -71,6 +71,15 @@ const projectData: projectDataType[] = [
     myStack: "팀장, 프론트, 백엔드",
     team: "2명",
   },
+  {
+    id: 7,
+    src: 트리폴린,
+    title: "유틸리티 헬퍼 서비스, MyHelper",
+    stack: "Next14, Tailwind, React Query",
+    duration: "2024.09.~ (개발중)",
+    myStack: "프론트엔드",
+    team: "단독 개발",
+  },
 ];
 
 export default projectData;

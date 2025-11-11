@@ -4,15 +4,17 @@
   flex-direction: column;
   min-height: 1000px;
   padding: 5% 5%;
-  background: #f1efed;
+  background: transparent;
+  position: relative;
 }
 
 .header {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
-  color: black;
+  margin-bottom: 40px;
+  color: #64ffda;
+  text-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
 }
 
 .projectSection {
@@ -38,14 +40,26 @@
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  margin-top: 40px;
 }
 
 .footer button {
-  padding: 10px 40px;
-  border-radius: 40px;
-  font-size: 1.5rem;
-  background-color: skyblue;
-  color: white;
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  background: rgba(100, 255, 218, 0.1);
+  border: 2px solid rgba(100, 255, 218, 0.5);
+  color: #64ffda;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+}
+
+.footer button:hover {
+  background: rgba(100, 255, 218, 0.2);
+  border: 2px solid rgba(100, 255, 218, 0.8);
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.5);
+  transform: translateY(-3px);
 }

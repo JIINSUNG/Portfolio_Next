@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./AboutSection.module.css";
-import { profile } from "@/shared/assets";
-import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -10,30 +8,28 @@ export default function AboutSection() {
         <h1>About Me</h1>
       </header>
       <main className={styles.hero}>
-        <div className={styles.about}>
-          <div className={styles.content}>
-            <h1>
-              안녕하세요, 프론트엔드 개발자 <br />
-              지인성 입니다.
-            </h1>
-            <p>
-              ✅ 성장을 위한 새로운 기술 학습과 도전을 두려워하지 않습니다.
-              <br />
-              <br />✅ 사용자 중심의 접근 방식을 중요하게 생각하며, 좋은 사용자
-              경험을 제공하기 위해 노력합니다.
-              <br />
-              <br />✅ 팀워크와 협업을 통해 더 나은 결과를 만들어내는 것을
-              목표로 합니다.
-              <br />
-              <br />✅ 열린 소통과 피드백을 통해 함께 발전하는 문화를
-              지향합니다.
-            </p>
+        <div className={styles.content}>
+          <div className={styles.intro}>
+            <h2>안녕하세요,</h2>
+            <h1>프론트엔드 개발자 지인성입니다.</h1>
           </div>
-        </div>
-        <div className={styles.profile}>
-          {/* image section */}
-          <div className={styles.imageSection}>
-            <Image src={profile} alt="profile" />
+          <div className={styles.description}>
+            <div className={styles.descItem}>
+              <span className={styles.icon}>🚀</span>
+              <p>성장을 위한 새로운 기술 학습과 도전을 두려워하지 않습니다.</p>
+            </div>
+            <div className={styles.descItem}>
+              <span className={styles.icon}>💎</span>
+              <p>사용자 중심의 접근 방식을 중요하게 생각하며, 좋은 사용자 경험을 제공하기 위해 노력합니다.</p>
+            </div>
+            <div className={styles.descItem}>
+              <span className={styles.icon}>🤝</span>
+              <p>팀워크와 협업을 통해 더 나은 결과를 만들어내는 것을 목표로 합니다.</p>
+            </div>
+            <div className={styles.descItem}>
+              <span className={styles.icon}>💬</span>
+              <p>열린 소통과 피드백을 통해 함께 발전하는 문화를 지향합니다.</p>
+            </div>
           </div>
         </div>
       </main>
