@@ -1,6 +1,11 @@
 .form {
   display: flex;
   flex-direction: column;
+  background: rgba(17, 34, 64, 0.4);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .formGroup {
@@ -8,34 +13,60 @@
   flex-direction: row;
   align-items: center;
   margin: 20px 0;
+  gap: 20px;
 }
 
 .formGroup label {
-  color: darkslategray;
-  width: 75px;
+  color: #64ffda;
+  width: 100px;
+  font-weight: 500;
+  text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
 }
 
 .formGroup label > span {
-  color: red;
+  color: #ff6b6b;
 }
 
 .formGroup input {
-  border-width: 1px;
-  border-color: #00cfbd;
+  border: 1px solid rgba(100, 255, 218, 0.3);
   display: flex;
-  height: 40px;
+  height: 45px;
   flex-direction: row;
   flex: 1;
+  padding: 12px;
+  background: rgba(10, 25, 47, 0.6);
+  color: #ccd6f6;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #64ffda;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
 }
 
 .formGroup textarea {
-  border-width: 1px;
-  border-color: #00cfbd;
+  border: 1px solid rgba(100, 255, 218, 0.3);
   display: flex;
   height: 200px;
   flex-direction: row;
   flex: 1;
-  padding: 4px;
+  padding: 12px;
+  background: rgba(10, 25, 47, 0.6);
+  color: #ccd6f6;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #64ffda;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
 }
 
 .submitBtn {
@@ -43,10 +74,21 @@
   width: 100%;
   max-width: 400px;
   height: 60px;
-  background-color: #00b3f0;
-  color: white;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  border-style: none;
+  background: rgba(100, 255, 218, 0.1);
+  border: 2px solid rgba(100, 255, 218, 0.5);
+  color: #64ffda;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+  margin-top: 20px;
+}
+
+.submitBtn:hover {
+  background: rgba(100, 255, 218, 0.2);
+  border: 2px solid rgba(100, 255, 218, 0.8);
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.5);
+  transform: translateY(-3px);
 }

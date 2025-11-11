@@ -50,7 +50,7 @@
   margin: 0;
   animation: appear 0.5s ease-in-out;
   font-family: "ApercuPro", sans-serif;
-  color: black;
+  color: #ccd6f6;
 }
 
 html,
@@ -66,13 +66,16 @@ body {
   min-height: 100dvh;
   max-width: 100dvw;
   min-width: 360px;
-  background: #f1efed;
+  background: linear-gradient(135deg, #0a192f 0%, #112240 50%, #1a365d 100%);
+  background-attachment: fixed;
 }
 
 main {
   display: flex;
   flex: 1;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 a {

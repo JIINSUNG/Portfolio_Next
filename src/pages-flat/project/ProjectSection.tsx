@@ -18,13 +18,7 @@ export default function ProjectSection({ preview }: ProjectSectionProps) {
         {projects.map((project) => (
               <BentoCard
                 key={project.id}
-                id={project.id}
-                src={project.src}
-                title={project.title}
-                stack={project.stack}
-                duration={project.duration}
-                myStack={project.myStack}
-                team={project.team}
+                {...project}
               />
             ))}
       </main>

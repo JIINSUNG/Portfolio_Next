@@ -49,7 +49,8 @@
   flex: 1;
   min-height: 1000px;
   padding: 5% 10%;
-  background: #f1efed;
+  background: transparent;
+  position: relative;
 }
 
 .middleTitle {
@@ -59,8 +60,12 @@
 
 .hero {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  animation: appear 1.5s ease-in-out;
 }
 
 .header {
@@ -72,88 +77,180 @@
 
 .header h1 {
   font-size: 3rem;
+  color: #64ffda;
+  text-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-.about {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: appearleft 1.5s ease-in-out;
+.header h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #64ffda, transparent);
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 0% 10%;
-  color: black;
+  gap: 4rem;
+  padding: 5% 5%;
+  background: rgba(17, 34, 64, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  backdrop-filter: blur(10px);
 }
 
-.content h1 {
-  font-size: 3rem;
-  white-space: nowrap;
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
 }
 
-.content p {
-  font-size: 1.2rem;
+.intro h2 {
+  font-size: 1.8rem;
+  color: #8892b0;
+  font-weight: 400;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #64ffda;
+  text-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
   font-weight: bold;
 }
 
-.profile {
-  display: flex;
-  flex: 1;
-  position: relative;
-  animation: appearright 1.5s ease-in-out;
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-.imageSection {
+.descItem {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: rgba(10, 25, 47, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
 }
 
-.imageSection img {
-  width: 500px;
-  height: 500px;
+.descItem:hover {
+  border-color: rgba(100, 255, 218, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.descItem p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ccd6f6;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .eachSection {
   padding-top: 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .certificate {
-  padding: 5% 5%;
+  padding: 3rem;
+  background: rgba(17, 34, 64, 0.4);
+  border-radius: 20px;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.certificate:hover {
+  border-color: rgba(100, 255, 218, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .certificate ul {
   list-style: none;
-  align-self: start;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  font-size: 1.5rem;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  color: #ccd6f6;
+  line-height: 1.6;
+}
+
+.certificate ul li {
+  padding: 1rem 1.5rem;
+  background: rgba(10, 25, 47, 0.3);
+  border-radius: 10px;
+  border-left: 3px solid #64ffda;
+  transition: all 0.3s ease;
+}
+
+.certificate ul li:hover {
+  background: rgba(10, 25, 47, 0.5);
+  transform: translateX(10px);
+  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.2);
 }
 
 .education {
-  padding: 5% 5%;
+  padding: 3rem;
+  background: rgba(17, 34, 64, 0.4);
+  border-radius: 20px;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.education:hover {
+  border-color: rgba(100, 255, 218, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .education ul {
   list-style: none;
-  align-self: start;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  font-size: 1.5rem;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  color: #ccd6f6;
+  line-height: 1.6;
+}
+
+.education ul li {
+  padding: 1rem 1.5rem;
+  background: rgba(10, 25, 47, 0.3);
+  border-radius: 10px;
+  border-left: 3px solid #64ffda;
+  transition: all 0.3s ease;
+}
+
+.education ul li:hover {
+  background: rgba(10, 25, 47, 0.5);
+  transform: translateX(10px);
+  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.2);
 }
 
 @media (min-width: 768px) and (max-width: 1600px) {
   .header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .education ul {
@@ -169,19 +266,30 @@
     min-height: 800px;
   }
 
-  .content h1 {
-    font-size: 2.5rem;
+  .content {
+    padding: 6% 4%;
   }
 
-  .imageSection img {
-    width: 400px;
-    height: 400px;
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    gap: 1.8rem;
+  }
+
+  .descItem p {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 767px) {
   .header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .education ul {
@@ -199,42 +307,33 @@
     min-height: 800px;
   }
 
-  .about {
-    position: relative;
-    justify-content: flex-start;
-    animation: mobileappear 1.5s ease-in-out;
-  }
-
-  .hero {
-    flex-direction: column-reverse;
-  }
-
   .content {
-    padding: 5% 5%;
+    padding: 8% 6%;
+    gap: 3rem;
   }
 
-  .content h1 {
+  .intro h2 {
+    font-size: 1.3rem;
+  }
+
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .descItem {
+    padding: 1.2rem;
+  }
+
+  .icon {
     font-size: 1.5rem;
-    text-align: center;
   }
 
-  .profile {
-    display: flex;
-    animation: mobileappear 1.5s ease-in-out;
-  }
-
-  .imageSection {
-    position: relative;
-    object-fit: contain;
-  }
-
-  .imageSection img {
-    width: 320px;
-    height: 320px;
-  }
-
-  .content p {
-    font-size: 1rem;
-    text-align: start;
+  .descItem p {
+    font-size: 0.95rem;
   }
 }
