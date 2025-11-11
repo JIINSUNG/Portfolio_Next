@@ -53,6 +53,22 @@
   box-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
 }
 
+.hoverHint {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #8892b0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
 .content {
   display: flex;
   flex-direction: row;
@@ -64,7 +80,7 @@
   display: grid;
   position: relative;
   padding: 4rem;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 3rem;
   list-style: none;
   border-radius: 25px;
@@ -84,9 +100,9 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 10%;
-  width: 300px;
-  height: 200px;
+  padding: 1.5rem;
+  width: 320px;
+  min-height: 200px;
   border: 1px solid rgba(100, 255, 218, 0.3);
   background: rgba(10, 25, 47, 0.95);
   backdrop-filter: blur(10px);
@@ -95,14 +111,40 @@
   color: #ccd6f6;
 }
 
+.tooltipDescription {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.tooltipLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tooltipLinks a {
+  color: #64ffda;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.tooltipLinks a:hover {
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+}
+
 .listItem:nth-child(even) .tooltip {
-  z-index: 1;
+  z-index: 9999;
   right: 0;
   bottom: 0;
 }
 
 .listItem:nth-child(odd) .tooltip {
-  z-index: 1;
+  z-index: 9999;
   bottom: 0;
   left: 0;
 }
@@ -123,13 +165,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 1.5rem 1rem;
   background: rgba(10, 25, 47, 0.3);
   border-radius: 15px;
   border: 1px solid rgba(100, 255, 218, 0.1);
+  min-height: 180px;
+  z-index: 1;
 }
 
 .listItem:hover {
@@ -138,14 +182,15 @@
   background: rgba(10, 25, 47, 0.5);
   border-color: rgba(100, 255, 218, 0.4);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
 }
 
-.listItem p {
+.listItem .tooltip {
   display: none;
 }
 
-.listItem:hover p {
-  display: block;
+.listItem:hover .tooltip {
+  display: flex;
 }
 
 /* .listItem::hover .tooltip {
@@ -156,6 +201,7 @@
   width: 80px;
   height: 80px;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .listItem:hover .skillImage {
@@ -167,6 +213,7 @@
   font-weight: 600;
   color: #ccd6f6;
   margin-top: 12px;
+  margin-bottom: 8px;
   text-align: center;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
@@ -175,6 +222,37 @@
 .listItem:hover .label {
   color: #64ffda;
   text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+}
+
+.levelBar {
+  width: 100%;
+  height: 5px;
+  background: rgba(10, 25, 47, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  margin-top: auto;
+}
+
+.levelFill {
+  height: 100%;
+  background: linear-gradient(90deg, #64ffda, #00d4ff);
+  border-radius: 10px;
+  transition: width 0.8s ease-out;
+  box-shadow: 0 0 8px rgba(100, 255, 218, 0.4);
+}
+
+.levelText {
+  font-size: 0.8rem;
+  color: #8892b0;
+  margin-top: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.listItem:hover .levelText {
+  color: #64ffda;
 }
 
 @media (max-width: 1600px) {
@@ -192,12 +270,28 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .listContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 800px) {
   .content {
     flex-direction: column;
   }
 
   .listContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .listContainer {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
   }
 }

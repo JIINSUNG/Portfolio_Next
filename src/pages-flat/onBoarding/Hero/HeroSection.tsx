@@ -1,58 +1,57 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
-  const [position, setPosition] = useState(0);
-  function onScroll() {
-    setPosition(window.scrollY);
-  }
+  const leftHeaderRef = useRef<HTMLHeadingElement>(null);
+  const rightHeaderRef = useRef<HTMLHeadingElement>(null);
+  const leftParagraphRef = useRef<HTMLParagraphElement>(null);
+  const rightParagraphRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
-    window.addEventListener("scroll", onScroll);
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const scrollFactor = scrollY * 0.5;
+
+      if (leftHeaderRef.current) {
+        leftHeaderRef.current.style.transform = `translate3d(${-scrollFactor}px, 0, 0)`;
+      }
+      if (rightHeaderRef.current) {
+        rightHeaderRef.current.style.transform = `translate3d(${scrollFactor}px, 0, 0)`;
+      }
+      if (leftParagraphRef.current) {
+        leftParagraphRef.current.style.transform = `translate3d(${-scrollFactor}px, 0, 0)`;
+      }
+      if (rightParagraphRef.current) {
+        rightParagraphRef.current.style.transform = `translate3d(${scrollFactor}px, 0, 0)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
     return () => {
-      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <section className={styles.section}>
       <main className={styles.line}>
-        <h1
-          className={styles.leftHeader}
-          style={{
-            transform: `translateX(${-position}px)`,
-          }}
-        >
+        <h1 ref={leftHeaderRef} className={styles.leftHeader}>
           Hello, I&apos;m
         </h1>
       </main>
       <main className={styles.line}>
-        <h1
-          className={styles.rightHeader}
-          style={{
-            transform: `translateX(${position}px)`,
-          }}
-        >
+        <h1 ref={rightHeaderRef} className={styles.rightHeader}>
           Insung
         </h1>
       </main>
       <main className={styles.line}>
-        <p
-          className={styles.leftParagraph}
-          style={{
-            transform: `translateX(${-position}px)`,
-          }}
-        >
+        <p ref={leftParagraphRef} className={styles.leftParagraph}>
           Frontend
         </p>
       </main>
       <main className={styles.line}>
-        <p
-          className={styles.rightParagraph}
-          style={{
-            transform: `translateX(${position}px)`,
-          }}
-        >
+        <p ref={rightParagraphRef} className={styles.rightParagraph}>
           Developer
         </p>
       </main>

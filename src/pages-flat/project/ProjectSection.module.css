@@ -2,30 +2,45 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  min-height: 1000px;
+  min-height: 600px;
   padding: 5% 5%;
   background: transparent;
   position: relative;
 }
 
 .header {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 3rem;
   color: #64ffda;
   text-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
 }
 
 .projectSection {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1400px;
+  margin: 0 auto 2rem;
   gap: 30px;
-  margin-bottom: 20px;
+}
+
+@media (min-width: 1400px) {
+  .projectSection {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .projectSection {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .projectSection {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 767px) {
@@ -33,6 +48,30 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    padding: 5% 3%;
+  }
+
+  .projectSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section {
+    padding: 5% 2%;
+  }
+
+  .projectSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .projectSection {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
 
@@ -40,7 +79,7 @@
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
 .footer button {
