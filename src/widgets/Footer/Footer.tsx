@@ -13,17 +13,17 @@ export default function Footer() {
             <GitHubIcon className={styles.item} />
           </li>
         </Link>
-        <Link href="/project">
+        <Link href="/#project">
           <li className={styles.menu}>
             <LaptopIcon className={styles.item} />
           </li>
         </Link>
-        <Link href="about">
+        <Link href="/#about">
           <li className={styles.menu}>
             <AccountCircleIcon className={styles.item} />
           </li>
         </Link>
-        <Link href={"/contact"}>
+        <Link href="/#contact">
           <li className={styles.menu}>
             <EmailIcon className={styles.item} />
           </li>

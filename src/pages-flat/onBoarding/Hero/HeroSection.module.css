@@ -23,17 +23,14 @@
 }
 
 @keyframes glow {
-  0%, 100% {
-    text-shadow:
-      0 0 10px rgba(100, 255, 218, 0.5),
-      0 0 20px rgba(100, 255, 218, 0.3),
-      0 0 30px rgba(100, 255, 218, 0.2);
+  0%,
+  100% {
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.5),
+      0 0 20px rgba(100, 255, 218, 0.3), 0 0 30px rgba(100, 255, 218, 0.2);
   }
   50% {
-    text-shadow:
-      0 0 20px rgba(100, 255, 218, 0.8),
-      0 0 30px rgba(100, 255, 218, 0.5),
-      0 0 40px rgba(100, 255, 218, 0.3);
+    text-shadow: 0 0 20px rgba(100, 255, 218, 0.8),
+      0 0 30px rgba(100, 255, 218, 0.5), 0 0 40px rgba(100, 255, 218, 0.3);
   }
 }
 
@@ -53,12 +50,11 @@
 
 .leftHeader {
   text-align: center;
-  font-size: 8rem;
+  font-size: 6.5rem;
   font-weight: bold;
   animation: appearleft 1.5s ease-in-out, glow 3s ease-in-out infinite;
   color: #64ffda;
-  text-shadow:
-    0 0 10px rgba(100, 255, 218, 0.5),
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5),
     0 0 20px rgba(100, 255, 218, 0.3);
   line-height: 1.2;
   will-change: transform;
@@ -67,12 +63,11 @@
 
 .rightHeader {
   text-align: center;
-  font-size: 8rem;
+  font-size: 6.5rem;
   font-weight: bold;
   animation: appearright 1.5s ease-in-out, glow 3s ease-in-out infinite 0.5s;
   color: #64ffda;
-  text-shadow:
-    0 0 10px rgba(100, 255, 218, 0.5),
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5),
     0 0 20px rgba(100, 255, 218, 0.3);
   line-height: 1.2;
   will-change: transform;
@@ -81,7 +76,7 @@
 
 .leftParagraph {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   animation: appearleft 1.5s ease-in-out;
   color: #ccd6f6;
   font-weight: 500;
@@ -92,7 +87,7 @@
 
 .rightParagraph {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   animation: appearright 1.5s ease-in-out;
   color: #ccd6f6;
   font-weight: 500;
@@ -103,36 +98,36 @@
 
 @media (max-width: 767px) {
   .leftHeader {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .rightHeader {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .leftParagraph {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .rightParagraph {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 }
 
-@media (min-width : 768px) and (max-width : 1600px) {
+@media (min-width: 768px) and (max-width: 1600px) {
   .leftHeader {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .rightHeader {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .leftParagraph {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .rightParagraph {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }

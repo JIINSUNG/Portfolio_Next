@@ -142,7 +142,7 @@ const skillData: SkillData[] = [
 
 export default function StackPage() {
   return (
-    <section className={styles.section}>
+    <section id="skills" className={styles.section}>
       <header className={styles.header}>
         <h1>Skills</h1>
         <p className={styles.hoverHint}>💡 각 스킬에 마우스를 올려보세요</p>

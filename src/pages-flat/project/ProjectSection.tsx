@@ -10,7 +10,7 @@ type ProjectSectionProps = {
 
 export default function ProjectSection({ preview }: ProjectSectionProps) {
   return (
-    <section className={styles.section}>
+    <section id="project" className={styles.section}>
       <header className={styles.header}>
         <h1>My Project</h1>
       </header>

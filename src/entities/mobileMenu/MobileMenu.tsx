@@ -1,9 +1,9 @@
 "use client";
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useRef } from "react";
 import styles from "./MobileMenu.module.css";
 import { MenuContext } from "@/shared/context/MenuProvider";
 import Link from "next/link";
-import { LinkButton } from "@/shared/components";
+import CloseIcon from "@mui/icons-material/Close";
 
 const MobileMenu = () => {
   const context = useContext(MenuContext);
@@ -14,9 +14,15 @@ const MobileMenu = () => {
       ref={menuRef}
       className={context.menuOpen ? styles.menu : styles.disappear}
     >
+      <div className={styles.closeButton}>
+        <CloseIcon
+          onClick={() => context.setMenuOpen(false)}
+          className={styles.closeIcon}
+        />
+      </div>
       <nav className={styles.nav}>
         <Link
-          href="/about"
+          href="/#about"
           onClick={() => {
             context.setMenuOpen(false);
           }}
@@ -28,7 +34,7 @@ const MobileMenu = () => {
           onClick={() => {
             context.setMenuOpen(false);
           }}
-          href="/project"
+          href="/#project"
           className={styles.link}
         >
           Project
@@ -37,7 +43,7 @@ const MobileMenu = () => {
           onClick={() => {
             context.setMenuOpen(false);
           }}
-          href="/skills"
+          href="/#skills"
           className={styles.link}
         >
           Skills
@@ -46,7 +52,7 @@ const MobileMenu = () => {
           onClick={() => {
             context.setMenuOpen(false);
           }}
-          href="/contact"
+          href="/#contact"
           className={styles.link}
         >
           Contact

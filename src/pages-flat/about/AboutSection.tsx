@@ -3,7 +3,7 @@ import styles from "./AboutSection.module.css";
 
 export default function AboutSection() {
   return (
-    <section className={styles.section}>
+    <section id="about" className={styles.section}>
       <header className={styles.header}>
         <h1>About Me</h1>
       </header>
@@ -20,11 +20,17 @@ export default function AboutSection() {
             </div>
             <div className={styles.descItem}>
               <span className={styles.icon}>💎</span>
-              <p>사용자 중심의 접근 방식을 중요하게 생각하며, 좋은 사용자 경험을 제공하기 위해 노력합니다.</p>
+              <p>
+                사용자 중심의 접근 방식을 중요하게 생각하며, 좋은 사용자 경험을
+                제공하기 위해 노력합니다.
+              </p>
             </div>
             <div className={styles.descItem}>
               <span className={styles.icon}>🤝</span>
-              <p>팀워크와 협업을 통해 더 나은 결과를 만들어내는 것을 목표로 합니다.</p>
+              <p>
+                팀워크와 협업을 통해 더 나은 결과를 만들어내는 것을 목표로
+                합니다.
+              </p>
             </div>
             <div className={styles.descItem}>
               <span className={styles.icon}>💬</span>
@@ -35,15 +41,49 @@ export default function AboutSection() {
       </main>
       <section className={styles.eachSection}>
         <header className={styles.header}>
-          <h1>Certificate / Awards</h1>
+          <h1>Awards / Certificates</h1>
         </header>
         <main className={styles.certificate}>
           <ul>
-            <li>📜 2023.12.15 SQLD (한국데이터산업진흥원)</li>
             <li>
-              🏆 2023.11.24 삼성 청년 SW 아카데미 10기 1학기 프로젝트 최우수상
+              <div className={styles.date}>📜 2025.09.26</div>
+              <div className={styles.content}>
+                웹디자인개발기능사 (한국산업인력공단)
+              </div>
             </li>
-            <li>📜 2022.11.25 정보처리기사 (한국산업인력공단)</li>
+            <li>
+              <div className={styles.date}>📜 2025.08.22</div>
+              <div className={styles.content}>
+                한국사 능력 검정시험 1급 (국사편찬위원회)
+              </div>
+            </li>
+            <li>
+              <div className={styles.date}>📜 2025.03.24</div>
+              <div className={styles.content}>OPIC IM2 (ACTFL)</div>
+            </li>
+            <li>
+              <div className={styles.date}>📜 2023.12.15</div>
+              <div className={styles.content}>SQLD (데이터자격검정)</div>
+            </li>
+            <li>
+              <div className={styles.date}>🏆 2023.11.24</div>
+              <div className={styles.content}>
+                삼성 청년 SW 아카데미 10기 1학기 프로젝트 최우수상
+                (삼성전자주식회사)
+              </div>
+            </li>
+            <li>
+              <div className={styles.date}>📜 2023.08.28</div>
+              <div className={styles.content}>
+                삼성 SW알고리즘 역량테스트 모의 A형 취득
+              </div>
+            </li>
+            <li>
+              <div className={styles.date}>📜 2022.11.25</div>
+              <div className={styles.content}>
+                정보처리기사 (한국산업인력공단)
+              </div>
+            </li>
           </ul>
         </main>
       </section>
