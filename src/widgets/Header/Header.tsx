@@ -16,16 +16,16 @@ export default function Header() {
       </Link>
       <ul className={styles.headerMenu}>
         <li>
-          <LinkButton href="/about" title="About Me" />
+          <LinkButton href="/#about" title="About Me" />
         </li>
         <li>
-          <LinkButton href="/project" title="Project" />
+          <LinkButton href="/#project" title="Project" />
         </li>
         <li>
-          <LinkButton href="/skills" title="Skills" />
+          <LinkButton href="/#skills" title="Skills" />
         </li>
         <li>
-          <LinkButton href="/contact" title="Contact" />
+          <LinkButton href="/#contact" title="Contact" />
         </li>
       </ul>
       <HamburgerMenu />

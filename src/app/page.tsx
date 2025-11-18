@@ -1,6 +1,7 @@
 import { AboutSection } from "@/pages-flat/about";
 import { ProjectSection } from "@/pages-flat/project";
 import { StackPage } from "@/pages-flat/stack";
+import { ContactSection } from "@/pages-flat/contact";
 import { HeroSection } from "@/pages-flat/onBoarding/Hero";
 import { SpaceBackground } from "@/shared/components/SpaceBackground";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <ProjectSection />
       <StackPage />
+      <ContactSection />
     </>
   );
 }

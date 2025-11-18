@@ -76,7 +76,7 @@
 }
 
 .header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #64ffda;
   text-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
   position: relative;
@@ -100,7 +100,7 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 5% 5%;
+  padding: 2% 2%;
   background: rgba(17, 34, 64, 0.3);
   border-radius: 20px;
   border: 1px solid rgba(100, 255, 218, 0.2);
@@ -117,13 +117,13 @@
 }
 
 .intro h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #8892b0;
   font-weight: 400;
 }
 
 .intro h1 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: #64ffda;
   text-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
   font-weight: bold;
@@ -158,7 +158,7 @@
 }
 
 .descItem p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #ccd6f6;
   line-height: 1.6;
@@ -173,7 +173,7 @@
 }
 
 .certificate {
-  padding: 3rem;
+  padding: 2rem;
   background: rgba(17, 34, 64, 0.4);
   border-radius: 20px;
   border: 1px solid rgba(100, 255, 218, 0.2);
@@ -191,7 +191,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #ccd6f6;
   line-height: 1.6;
 }
@@ -229,7 +229,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #ccd6f6;
   line-height: 1.6;
 }
@@ -303,13 +303,17 @@
   }
 
   .section {
-    padding: 5% 5%;
-    min-height: 800px;
+    padding: 3% 5%;
+    min-height: auto;
+  }
+
+  .header {
+    padding: 3% 0;
   }
 
   .content {
-    padding: 8% 6%;
-    gap: 3rem;
+    padding: 6% 5%;
+    gap: 2rem;
   }
 
   .intro h2 {
@@ -322,7 +326,7 @@
 
   .description {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.2rem;
   }
 
   .descItem {
@@ -335,5 +339,9 @@
 
   .descItem p {
     font-size: 0.95rem;
+  }
+
+  .eachSection {
+    padding-top: 3%;
   }
 }

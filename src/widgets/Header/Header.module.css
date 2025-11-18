@@ -21,7 +21,7 @@
   display: flex;
   gap: 2.5rem;
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #8892b0;
   align-items: center;
@@ -35,7 +35,7 @@
 .name {
   color: #64ffda;
   z-index: 10;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 2px;
   text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);

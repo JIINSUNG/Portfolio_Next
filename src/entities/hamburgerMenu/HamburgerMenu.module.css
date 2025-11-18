@@ -2,14 +2,32 @@
   display: none;
   width: 2rem;
   height: 2rem;
-  fill: blue;
+  fill: #64ffda;
+  z-index: 101;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mobileBtn:hover {
+  fill: #00d4ff;
+  transform: scale(1.1);
 }
 
 .closeBtn {
   display: none;
   width: 2rem;
   height: 2rem;
-  fill: white;
+  fill: #64ffda;
+  z-index: 151;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.closeBtn:hover {
+  fill: #ff6b6b;
+  transform: rotate(90deg) scale(1.1);
 }
 
 @media (max-width: 767px) {

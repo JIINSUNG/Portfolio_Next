@@ -11,19 +11,23 @@ export default function HeroSection() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const scrollFactor = scrollY * 0.5;
+      const windowHeight = window.innerHeight;
+      const maxScroll = windowHeight * 0.8;
+
+      // 스크롤에 따라 opacity 계산 (0 ~ maxScroll 범위에서 1 -> 0)
+      const opacity = Math.max(0, 1 - scrollY / maxScroll);
 
       if (leftHeaderRef.current) {
-        leftHeaderRef.current.style.transform = `translate3d(${-scrollFactor}px, 0, 0)`;
+        leftHeaderRef.current.style.opacity = `${opacity}`;
       }
       if (rightHeaderRef.current) {
-        rightHeaderRef.current.style.transform = `translate3d(${scrollFactor}px, 0, 0)`;
+        rightHeaderRef.current.style.opacity = `${opacity}`;
       }
       if (leftParagraphRef.current) {
-        leftParagraphRef.current.style.transform = `translate3d(${-scrollFactor}px, 0, 0)`;
+        leftParagraphRef.current.style.opacity = `${opacity}`;
       }
       if (rightParagraphRef.current) {
-        rightParagraphRef.current.style.transform = `translate3d(${scrollFactor}px, 0, 0)`;
+        rightParagraphRef.current.style.opacity = `${opacity}`;
       }
     };
 
