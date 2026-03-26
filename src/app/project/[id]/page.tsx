@@ -1,18 +1,23 @@
 import { ProjectInfo } from "@/entities/projectInfo";
 import { ProjectInfoSection } from "@/pages-flat/projectInfo";
+import projectDetailData from "@/shared/assets/projectDetail";
 import React from "react";
+import { notFound } from "next/navigation";
 
 interface IProject {
   params: {
-    id: number;
+    id: string;
   };
 }
 
 const Page = async ({ params }: IProject) => {
-  const projectInfo = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/project/${params.id}`,
-    { cache: "no-store" }
-  ).then((res) => res.json());
+  const projectId = parseInt(params.id);
+  const projectInfo = projectDetailData[projectId - 1];
+
+  if (!projectInfo) {
+    notFound();
+  }
+
   return <ProjectInfoSection projectInfo={projectInfo} />;
 };
 

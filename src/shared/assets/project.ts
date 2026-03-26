@@ -68,7 +68,7 @@ const projectData: projectDataType[] = [
     title: "여행 일정 관리 플랫폼, EnjoyTrip (Tripoline)",
     stack: "Vue3, Pinia, Tailwind, Kakao Map, Axios, Vite, Spring Boot",
     duration: "2023.11.10.~2023.11.24. (2주간)",
-    myStack: "팀장, 프론트엔드 리드",
+    myStack: "프론트엔드 + 백엔드 (50%)",
     team: "2명",
   },
   // {

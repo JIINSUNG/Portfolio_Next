@@ -2,8 +2,8 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  min-height: 600px;
-  padding: 5% 5%;
+  min-height: auto;
+  padding: 3% 5%;
   background: transparent;
   position: relative;
   overflow: visible;
@@ -20,21 +20,20 @@
 
 .projectSection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 auto 2rem;
-  gap: 40px;
-  row-gap: 50px;
+  gap: 30px;
   overflow: visible;
   padding: 10px;
   max-width: 1400px;
-  justify-content: center;
+  width: 100%;
 }
 
-.projectSection > * > div {
-  width: 100%;
-  max-width: 320px;
-  min-width: 320px;
-  display: block;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .projectSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
 }
 
 @media (max-width: 767px) {

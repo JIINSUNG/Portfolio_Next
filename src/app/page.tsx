@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <SpaceBackground />
       <HeroSection />
-      <AboutSection />
       <ProjectSection />
+      <AboutSection />
       <StackPage />
       <ContactSection />
     </>

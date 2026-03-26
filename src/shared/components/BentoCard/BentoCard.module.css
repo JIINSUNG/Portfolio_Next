@@ -8,7 +8,7 @@
   }
 }
 
-@keyframes mignify {
+@keyframes demagnify {
   0% {
     scale: 1.2;
   }
@@ -56,6 +56,7 @@
     0 0 0 1px rgba(100, 255, 218, 0.1);
   border: 1px solid rgba(100, 255, 218, 0.2);
   transition: all 0.3s ease;
+  min-width: 0;
 }
 
 .bento img {
@@ -214,34 +215,51 @@
   }
 
   .abstract {
-    padding: 8px 8px 6px 8px;
-    gap: 4px;
+    padding: 10px 12px 8px 12px;
+    gap: 5px;
   }
 
   .title {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
+    -webkit-line-clamp: 1;
   }
 
-  .duration,
-  .stack,
-  .myStack,
+  .duration {
+    font-size: 0.85rem;
+  }
+
+  .stack {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .myStack {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+  }
+
   .team {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   .main h1 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: bold;
+    padding: 0 10px;
+    word-break: keep-all;
   }
 
   .main h2 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
+    padding: 0 10px;
+    word-break: keep-all;
   }
 
   .main p,
   .main span {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    padding: 0 10px;
   }
 }
 
@@ -259,32 +277,49 @@
   }
 
   .abstract {
-    padding: 8px 8px 6px 8px;
+    padding: 10px 10px 8px 10px;
     gap: 4px;
   }
 
   .title {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    -webkit-line-clamp: 1;
   }
 
-  .duration,
-  .stack,
-  .myStack,
+  .duration {
+    font-size: 0.8rem;
+  }
+
+  .stack {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .myStack {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;
+  }
+
   .team {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .main h1 {
     font-size: 1rem;
+    padding: 0 8px;
+    word-break: keep-all;
   }
 
   .main h2 {
     font-size: 0.85rem;
+    padding: 0 8px;
+    word-break: keep-all;
   }
 
   .main p,
   .main span {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    padding: 0 8px;
   }
 }
 

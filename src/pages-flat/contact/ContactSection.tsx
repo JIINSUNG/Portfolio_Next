@@ -19,7 +19,7 @@ export default function ContactSection() {
         <div className={styles.formSection}>
           <div className={styles.emailInfo}>
             <h2>📧 Email</h2>
-            <a href="mailto:jiinsung950@gmail.com" className={styles.emailLink}>
+            <a href="mailto:crm03008@gmail.com" className={styles.emailLink}>
               crm03008@gmail.com
             </a>
           </div>
